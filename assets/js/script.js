@@ -19,7 +19,7 @@ form.addEventListener('submit', function(event) {
     };
 
     // Store object in localStorage
-    localStorage.setItem('myForm', JSON.stringify(myForm));
+    localStorage.setItem('myForm', JSON.stringify(myBlog));
 
     // Optionally, you can redirect the user to another page
     window.location.href = 'blog.html';
