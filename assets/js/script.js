@@ -1,6 +1,6 @@
 // document.getElementById("myForm").addEventListener("submit", function(event){
 
-
+var blogList=JSON.parse(localStorage.getItem("myForm") ) || []
 const form = document.getElementById('myForm');
 
 form.addEventListener('submit', function(event) {
@@ -17,10 +17,19 @@ form.addEventListener('submit', function(event) {
         title: title,
         content: content
     };
-
+blogList.push(myBlog)
     // Store object in localStorage
-    localStorage.setItem('myForm', JSON.stringify(myBlog));
+    localStorage.setItem('myForm', JSON.stringify(blogList));
 
     // Optionally, you can redirect the user to another page
     window.location.href = 'blog.html';
 });
+
+document.getElementById('userName').value ='';
+document.getElementById('title').value ='';
+document.getElementById('content').value ='';
+
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
