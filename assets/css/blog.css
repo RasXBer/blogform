@@ -20,7 +20,6 @@ header::after {
     width: 100%;
     border-bottom: 6px double black;
     /* First line */
-
 }
 
 h1 {
@@ -29,17 +28,16 @@ h1 {
 
 .container {
     margin: 50px auto;
-    width: 80%;
+    width: 100%;
     text-align: left;
     border-color: black;
+    border: 1px solid #110f0f;
 }
 
-.blogPost {
+.blogPostsContainer {
+    margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: black;
 }
 
 body {
