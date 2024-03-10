@@ -10,45 +10,52 @@ body {
     font-size: 25px;
     margin: 0;
     padding: 0;
-  }
-  
+    /* overflow-x: hidden; */
+}
+
 .dark-mode {
     background-color: black;
     color: white;
-  }
+}
 
 header {
     padding: 40px;
- }
+}
 
- header {
-    text-align: left; /* Center the text within the header */
-    position: relative; /* Positioning context for pseudo-elements */
+header {
+    text-align: right;
+    /* Center the text within the header */
+    position: relative;
+    /* Positioning context for pseudo-elements */
     height: 50px;
     width: 100%;
 }
 
- header::after {
+header::after {
     content: "";
     position: absolute;
-    bottom: -4px; /* Adjust this value to control the distance of the double line from the text */
+    bottom: -4px;
+    /* Adjust this value to control the distance of the double line from the text */
     left: 0;
     width: 100%;
-    border-bottom: 6px double black; /* First line */
+    border-bottom: 6px double black;
+    /* First line */
 }
 
 .container {
     display: flex;
 }
 
-.left-section, .right-section {
+.left-section,
+.right-section {
     flex: 1;
     padding: 20px;
 }
 
 .vertical-line {
     border-left: 6px double black;
-    height: 300vh /* Adjust height as needed */
+    height: 85vh
+        /* Adjust height as needed */
 }
 
 .header-circle {
@@ -101,8 +108,8 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-} 
+}
 
 input[type="submit"]:hover {
     background-color: #45a049;
-} 
+}
