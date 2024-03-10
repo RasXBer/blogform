@@ -1,10 +1,12 @@
 header {
     padding: 40px;
- }
+}
 
- header {
-    text-align: left; /* Center the text within the header */
-    position: relative; /* Positioning context for pseudo-elements */
+header {
+    text-align: left;
+    /* Center the text within the header */
+    position: relative;
+    /* Positioning context for pseudo-elements */
     height: 20px;
     width: 100%;
 }
@@ -12,15 +14,15 @@ header {
 header::after {
     content: "";
     position: absolute;
-    bottom: 4px; /* Adjust this value to control the distance of the double line from the text */
+    bottom: 4px;
+    /* Adjust this value to control the distance of the double line from the text */
     left: 0;
     width: 100%;
-    border-bottom: 6px double black; /* First line */
-   
+    border-bottom: 6px double black;
+    /* First line */
+
 }
-.backbtn {
-    text-align: right;
-}
+
 h1 {
     margin-bottom: 20px;
 }
@@ -32,13 +34,13 @@ h1 {
     border-color: black;
 }
 
-.blog-post {
+.blogPost {
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: black;
-   }
+}
 
 body {
     padding: 25px;
@@ -46,9 +48,9 @@ body {
     color: black;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    }
-  
+}
+
 .dark-mode {
     background-color: black;
     color: white;
-  }
+}

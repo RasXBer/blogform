@@ -42,6 +42,10 @@ header::after {
     /* First line */
 }
 
+header button {
+    position: relative;
+    right: 200px;
+}
 .container {
     display: flex;
 }
@@ -59,16 +63,19 @@ header::after {
 }
 
 .header-circle {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     border-radius: 50%;
-    background-color: #3498db;
+    /* background-color: #3498db; */
+    background: linear-gradient(to top,  rgb(73, 50, 7), yellow);
+        animation: fadeColors 5s infinite;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
-    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif; font-weight: 400;
+    font-size: 2em;
+    margin-left: 80px;
 }
 
 /* .container {
