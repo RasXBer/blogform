@@ -46,6 +46,13 @@ header button {
     position: relative;
     right: 200px;
 }
+
+myFooter {
+    left:0
+    position: absolute;
+    border-bottom: 6px double black;
+}
+
 .container {
     display: flex;
 }

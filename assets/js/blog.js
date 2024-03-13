@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Log local storage data on My First Blog page
         const blogPostsContainer = document.getElementById('blogPosts');
         const userInfo = document.createElement('div')
-        const titleInfo = document.createElement('div')
+        const titleInfo = document.createElement('h2')
         const contentInfo = document.createElement('div')
         //    userInfo.textContent=userData[i].userName;
         userInfo.textContent = userData[i].userName;
