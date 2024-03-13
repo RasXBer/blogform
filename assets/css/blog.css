@@ -31,13 +31,14 @@ footer {
     width: 100%;
     margin: 0;
     padding-left: 0%;
-  }
+}
 
 .container {
     margin: 50px auto;
     width: 100%;
     text-align: left;
     flex-wrap: wrap;
+    min-height: calc(80vh - 80px);
     /* border-color: black; 
     border: 1px solid #110f0f;  */
 }
