@@ -35,3 +35,22 @@ function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
 }
+
+// Function to create and populate the footer with three items
+function populateFooter() {
+    // Footer element
+    const footer = document.getElementById("myFooter");
+   
+    const blogName = document.createElement("p");
+    blogName.textContent ="my-first-blog";
+
+    const email = document.createElement("p");
+    email.textContent = "rb@gmail.com";
+
+    // Append items to the footer
+    footer.appendChild(blogName);
+    footer.appendChild(email);
+}
+
+// Call the function to populate the footer
+populateFooter();
