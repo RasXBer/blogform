@@ -19,7 +19,6 @@ header::after {
     left: 0;
     width: 100%;
     border-bottom: 6px double black;
-    /* First line */
 }
 
 h1 {
@@ -32,25 +31,15 @@ footer {
     width: 100%;
     margin: 0;
     padding-left: 0%;
-}
-/* myFooter {
-    left: 0
- 
-} */
-
-/* footer::before {
-    position: absolute;
-    border-top: 6px double black;
-    width: 100%;
- top: 2px;
-} */
+  }
 
 .container {
     margin: 50px auto;
     width: 100%;
     text-align: left;
-    border-color: black;
-    border: 1px solid #110f0f;
+    flex-wrap: wrap;
+    /* border-color: black; 
+    border: 1px solid #110f0f;  */
 }
 
 .blogPostsContainer {
