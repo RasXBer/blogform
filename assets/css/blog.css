@@ -48,7 +48,12 @@ footer {
     margin-bottom: 20px;
     padding: 20px;
 }
-
+/* Create a container for each blog post */
+blog-post {
+    border-color: black; 
+    border: 1px solid #110f0f;
+    padding: 25px; 
+}
 body {
     padding: 25px;
     background-color: white;

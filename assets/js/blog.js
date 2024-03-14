@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var userData = JSON.parse(localStorage.getItem("myForm"));
     for (let i = 0; i < userData.length; i++) {
 
-
+        // adding to fix section
+        // Create a container for each blog post
+        const blogPostDiv = document.createElement('div');
+        blogPostDiv.className = 'blog-post'; // Use this class to style each blog post container
 
         // Log local storage data
         console.log("User Name:", userData[i].userName);
@@ -16,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const titleInfo = document.createElement('h2')
         const contentInfo = document.createElement('div')
         //    userInfo.textContent=userData[i].userName;
-        userInfo.textContent = userData[i].userName;
+        userInfo.textContent = `Posted by:${userData[i].userName}`;
         titleInfo.textContent = userData[i].title;
         contentInfo.textContent = userData[i].content;
 
@@ -24,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
         blogPostsContainer.appendChild(titleInfo);
         blogPostsContainer.appendChild(contentInfo);
         blogPostsContainer.appendChild(userInfo);
+        // Create a container for each blog post
+        blogPostsContainer.appendChild(blogPostDiv); 
     }
 });
 
@@ -40,9 +45,9 @@ function myFunction() {
 function populateFooter() {
     // Footer element
     const footer = document.getElementById("myFooter");
-   
+
     const blogName = document.createElement("p");
-    blogName.textContent ="my-first-blog";
+    blogName.textContent = "my-first-blog";
 
     const email = document.createElement("p");
     email.textContent = "rb@gmail.com";
