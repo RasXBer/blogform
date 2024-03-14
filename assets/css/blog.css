@@ -49,7 +49,7 @@ footer {
     padding: 20px;
 }
 /* Create a container for each blog post */
-blog-post {
+.blog-post {
     border-color: black; 
     border: 1px solid #110f0f;
     padding: 25px; 
